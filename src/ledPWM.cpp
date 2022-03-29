@@ -26,11 +26,11 @@ bool ledPWM::getState() {
     return _state;
 }
 
-void ledPWM::setValue(byte value) {
+void ledPWM::setValue(int value) {
     _pwmValue = value;
 }
 
-byte ledPWM::getValue() {
+int ledPWM::getValue() {
     return _pwmValue;
 }
 

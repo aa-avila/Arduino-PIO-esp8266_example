@@ -10,13 +10,13 @@ class ledPWM {
     void off();
     void toggle();
     bool getState();
-    void setValue(byte value);
-    byte getValue();
+    void setValue(int value);
+    int getValue();
     void update();
 
    private:
     byte _pin;
-    byte _pwmValue;
+    int _pwmValue;
     bool _state;
 };
 
