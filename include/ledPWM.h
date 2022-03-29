@@ -6,6 +6,7 @@
 class ledPWM {
    public:
     ledPWM(byte pin);
+    void init();
     void on();
     void off();
     void toggle();

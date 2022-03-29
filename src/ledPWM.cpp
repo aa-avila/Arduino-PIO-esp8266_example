@@ -6,6 +6,9 @@ ledPWM::ledPWM(byte pin) {
     _pin = pin;
     _pwmValue = 0;
     _state = false;
+}
+
+void ledPWM::init() {
     pinMode(_pin, OUTPUT);
     analogWrite(_pin, _pwmValue);
 }
