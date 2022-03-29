@@ -3,9 +3,8 @@
 
 #include <Arduino.h>
 
-class ledPWM
-{
-public:
+class ledPWM {
+   public:
     ledPWM(byte pin);
     void on();
     void off();
@@ -15,7 +14,7 @@ public:
     byte getValue();
     void update();
 
-private:
+   private:
     byte _pin;
     byte _pwmValue;
     bool _state;
