@@ -44,3 +44,18 @@ void ledPWM::update() {
         analogWrite(_pin, 0);
     }
 }
+
+void ledPWM::onNow() {
+    on();
+    update();
+}
+
+void ledPWM::offNow() {
+    off();
+    update();
+}
+
+void ledPWM::toggleNow() {
+    toggle();
+    update();
+}

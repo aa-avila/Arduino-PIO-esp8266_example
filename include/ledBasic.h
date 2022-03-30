@@ -1,18 +1,16 @@
-#ifndef ledPWM_h
-#define ledPWM_h
+#ifndef ledBasic_h
+#define ledBasic_h
 
 #include <Arduino.h>
 
-class ledPWM {
+class ledBasic {
    public:
-    ledPWM(byte pin);
+    ledBasic(byte pin);
     void init();
     void on();
     void off();
     void toggle();
     bool getState();
-    void setValue(int value);
-    int getValue();
     void update();
     void onNow();
     void offNow();
@@ -20,7 +18,6 @@ class ledPWM {
 
    private:
     byte _pin;
-    int _pwmValue;
     bool _state;
 };
 
